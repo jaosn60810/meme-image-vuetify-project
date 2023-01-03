@@ -1,8 +1,14 @@
 <template>
-  <HelloWorld />
+  <VApp>
+    <SideBar></SideBar>
+
+    <VMain>
+      <ImageGallery></ImageGallery>
+    </VMain>
+  </VApp>
 </template>
 
 <script lang="ts" setup>
-import HelloWorld from "@/components/HelloWorld.vue";
-import Default from "@/layouts/default/Default.vue";
+import ImageGallery from "@/components/ImageGallery.vue";
+import SideBar from "@/components/SideBar.vue";
 </script>
