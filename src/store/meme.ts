@@ -33,7 +33,7 @@ export const useMemeStore = defineStore("meme", () => {
 
   async function getMemes() {
     const { isFetching, error, data } = await useFetch(
-      "https://plain-wood-ca96.jason60810.workers.dev/corsproxy/"
+      "https://orange-resonance-6df7.jason60810.workers.dev/?https://memes.tw/wtf/api"
     )
       .get()
       .json();
@@ -44,7 +44,7 @@ export const useMemeStore = defineStore("meme", () => {
 
   async function getMemesByClassId(classId: number = 11) {
     const { isFetching, error, data } = await useFetch(
-      `https://plain-wood-ca96.jason60810.workers.dev/corsproxy/?contest=${classId}`
+      `https://orange-resonance-6df7.jason60810.workers.dev/?https://memes.tw/wtf/api?contest=${classId}`
     )
       .get()
       .json();
