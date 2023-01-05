@@ -5,11 +5,11 @@
         v-for="(meme, memeIndex) in memeStore.memes"
         :key="meme.id"
         cols="12"
-        sm="4"
-        md="2"
+        sm="6"
+        md="4"
       >
         <VCard @click="copyUrl(meme.src, memeIndex)">
-          <VImg :src="meme.src" aspect-ratio="1" cover>
+          <VImg :src="meme.src" aspect-ratio="1" contain>
             <div class="d-flex justify-space-between">
               <CopiedButton :isLoading="loading[memeIndex]"></CopiedButton>
               <LinkButton :memeUrl="meme.url"></LinkButton>
