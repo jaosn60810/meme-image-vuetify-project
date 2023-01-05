@@ -62,10 +62,13 @@ export const useMemeStore = defineStore("meme", () => {
     const findClassNameId = (className: string) =>
       memes.find((meme) => meme.contest.name === className)?.contest.id;
 
-    return memeClassNames.map((memeClassName) => ({
-      name: memeClassName,
-      id: findClassNameId(memeClassName) ?? 11,
-    }));
+    return [
+      { id: 0, name: "熱門" },
+      ...memeClassNames.map((memeClassName) => ({
+        name: memeClassName,
+        id: findClassNameId(memeClassName) ?? 11,
+      })),
+    ];
   }
 
   return { memes, getMemes, getMemesByClassId, memeClasses };
