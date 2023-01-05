@@ -14,5 +14,5 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{ isLoading: boolean }>();
+withDefaults(defineProps<{ isLoading: boolean }>(), { isLoading: false });
 </script>
