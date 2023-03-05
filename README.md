@@ -1,54 +1,54 @@
 # README Template
 
-![專案封面圖](https://user-images.githubusercontent.com/26405746/212473298-9d7f6652-d297-4840-89ea-cac2d5e7b9bb.png)
+![Project Cover Image](https://user-images.githubusercontent.com/26405746/212473298-9d7f6652-d297-4840-89ea-cac2d5e7b9bb.png)
 
-- [線上觀看連結](https://tangerine-monstera-7b5552.netlify.app/)
+- [View Online](https://tangerine-monstera-7b5552.netlify.app/)
 
-## 安裝
+## Installation
 
-以下將會引導你如何安裝此專案到你的電腦上。
+This section will guide you on how to install this project on your computer.
 
-### 取得專案
+### Get the project
 
 ```bash
 git clone https://github.com/jaosn60810/meme-image-vuetify-project.git
 ```
 
-### 移動到專案內
+### Move to the project directory
 
 ```bash
 cd meme-image-vuetify-project
 ```
 
-### 安裝套件
+### Install dependencies
 
 ```bash
 pnpm install
 ```
 
-### 運行專案
+### Run the project
 
 ```bash
 pnpm dev
 ```
 
-### 開啟專案
+### Open the project
 
-在瀏覽器網址列輸入以下即可看到畫面
+Enter the following in the browser address bar to see the website:
 
 ```bash
 http://127.0.0.1:3000/
 ```
 
-## 資料夾說明
+## Folder Structure
 
-- views - 畫面放置處
-- router - 路由放置處
-- components - 元件放置處
-- store - 狀態放置處
-- assets - 靜態資源放置處
+- views - where the web pages are stored
+- router - where the routes are stored
+- components - where the components are stored
+- store - where the state is stored
+- assets - where the static resources are stored
 
-## 專案技術
+## Technologies Used
 
 - Vue v3.2.13
 - Vite v3.1.9
